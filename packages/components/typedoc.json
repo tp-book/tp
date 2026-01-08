@@ -1,0 +1,60 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src/index.ts"],
+  "entryPointStrategy": "expand",
+  "out": "api",
+  "plugin": [],
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "coverage/**",
+    "dist/**",
+    "api/**",
+    "node_modules/**",
+    "public/**",
+    "scripts/**"
+  ],
+  "excludePrivate": false,
+  "excludeProtected": false,
+  "excludeExternals": true,
+  "readme": "README.md",
+  "name": "@tp/components",
+  "includeVersion": true,
+  "sort": ["source-order"],
+  "categorizeByGroup": true,
+  "defaultCategory": "Other",
+  "categoryOrder": [
+    "Main",
+    "Question components",
+    "Utility components",
+    "Utility functions",
+    "Base",
+    "*"
+  ],
+  "searchInComments": true,
+  "searchInDocuments": true,
+  "navigation": {
+    "includeCategories": true,
+    "includeGroups": true
+  },
+  "highlightLanguages": [
+    "asciidoc",
+    "bash",
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "markdown",
+    "prolog",
+    "python",
+    "sql",
+    "typescript",
+    "yaml"
+  ],
+  "visibilityFilters": {
+    "protected": true,
+    "private":  false,
+    "inherited": true,
+    "external": false
+  }
+}

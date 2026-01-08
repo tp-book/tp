@@ -1,0 +1,34 @@
+{
+  "name": "@tp/components",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "api": "typedoc --options ./typedoc.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@awesome.me/webawesome": "^3.1.0",
+    "lit": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@vitest/browser-playwright": "^4.0.16",
+    "@vitest/coverage-istanbul": "^4.0.16",
+    "glob": "^13.0.0",
+    "happy-dom": "^20.1.0",
+    "playwright": "^1.57.0",
+    "typedoc": "^0.28.15",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.16"
+  }
+}
