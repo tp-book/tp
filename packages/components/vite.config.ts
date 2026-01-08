@@ -43,7 +43,9 @@ export default defineConfig({
           chunk.name === 'index' ? 'tp-components.js' : `${sanitizeChunkName(chunk.name)}.js`,
         chunkFileNames: (chunk) => `${sanitizeChunkName(chunk.name)}.js`,
         manualChunks(id) {
-          if (id.includes('node_modules')) return 'vendor';
+          if (id.includes('lit')) return 'lib/lit';
+          if (id.includes('@awesome.me/webawesome')) return 'lib/webawesome';
+          if (id.includes('node_modules')) return 'lib/vendor';
           if (id.includes('/src/')) {
             const rel = path
               .relative(path.resolve(__dirname, 'src'), id)
