@@ -1,4 +1,5 @@
 import '@awesome.me/webawesome/dist/styles/webawesome.css';
+import './styles/tp-global.css';
 
 import '@awesome.me/webawesome/dist/components/button/button.js';
 import '@awesome.me/webawesome/dist/components/card/card.js';
@@ -12,4 +13,9 @@ await allDefined({
   additionalElements: [],
 });
 
-console.log('TP Components loaded');
+// base component
+export { TpBase } from './components/base/base.js';
+// utility components
+export { TpLorem } from './components/lorem/lorem.js';
+
+console.log('WA Components and TP Components loaded');
