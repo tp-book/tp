@@ -1,0 +1,57 @@
+# macOS
+.DS_Store
+
+# System
+Thumbs.db
+ehthumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# Node / pnpm
+node_modules/
+.pnpm-store/         # si tu utilises un store local
+.pnpm-debug.log
+
+# Vite / build outputs
+dist/
+.vite/
+out/
+
+# Vitest / coverage
+coverage/
+.vitest/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+# cache
+.cache/
+
+# Environment / secrets
+.env
+.env.*.local
+.secrets/
+.secret
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.iml
+
+# Editor swap / temp files
+*.swp
+*~
+*.tmp
+
+# Packages / archives
+*.tgz
+*.zip
+
+# Misc
+.sass-cache/
+coverage.xml
